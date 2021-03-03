@@ -1,1 +1,1 @@
-# big-o-js
+# Desafios de lógica  resolvidos/ Logic challenges solved
