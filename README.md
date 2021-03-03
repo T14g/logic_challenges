@@ -1,1 +1,1 @@
-# Desafios de lógica  resolvidos/ Logic challenges solved
+# Desafios de Lógica  resolvidos/ Logic challenges solved
