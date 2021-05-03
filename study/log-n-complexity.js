@@ -11,8 +11,6 @@ function findIndex(arr, value){
     let high = arr.length -1;
     let low  = 0;
 
-   
-
 
     while( low <= high) {
 
