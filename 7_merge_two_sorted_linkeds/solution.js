@@ -1,35 +1,25 @@
 function mergeLists(head1, head2) {
-    let allNumbers = [];
-    let result = new SinglyLinkedList();
-    
-    if(head1){
-        let current = head1;
-        
-        while(current){
-            allNumbers.push(current.data);
-            current = current.next;
-        }
-    }
-    
-    if(head2){
-        let current = head2;
-        
-        while(current){
-            allNumbers.push(current.data);
-            current = current.next;
-        }
-    }
-    
-    allNumbers.sort();
-    
-    let current = result;
-    for(let i = 0; i < allNumbers.length; i++){
-        current.data = allNumbers[i];
-        
-    }
-    
-    
-    //not done yet
-    
 
+    // base case 
+    if(head1 === null && head2 === null) return null;
+    
+    //head1 is null
+    if(head1 === null) return head2;
+    
+    //head2 
+    if(head2 === null) return head1;
+    
+    let temp = null;
+
+    // find the lower of two , then the next will be
+    // the result of a recursive call with
+    if(head1.data < head2.data){
+        temp = head1;
+        temp.next = mergeLists(head1.next, head2);
+    }else{
+        temp = head2;
+        temp.next = mergeLists(head1, head2.next);
+    }
+
+    return temp;
 }
