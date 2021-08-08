@@ -1,4 +1,4 @@
-# Hackerrank Solutions
+# Hackerrank Solutions 2021
 
 Hello, i made this repository to store my hackerrank challenges solutions.
 
